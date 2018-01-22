@@ -10,7 +10,7 @@
 
         public static void WaitForElementUpTo(int seconds = 5)
         {
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(seconds));
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(seconds);
         }
     }
 }
